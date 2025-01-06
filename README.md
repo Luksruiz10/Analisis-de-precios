@@ -1,9 +1,9 @@
 # Análisis de Precios en Supermercados - Proyecto de Ciencia de Datos
 
-*Descripcion
+# Descripcion
 Este proyecto analiza los precios de productos en un supermercado reconocido de España a lo largo del tiempo, permitiendo estudiar la inflación diaria, identificar tendencias y destacar las mayores variaciones de precio. Los datos se obtienen mediante scraping diario, se almacenan en una base de datos SQLite y se visualizan con Streamlit y Plotly.
 
-* Características
+## Características
 - Registro diario de precios de productos y categorías.
 - Cálculo automático de la inflación diaria en la canasta básica, comparación de la misma contra la inflación.
 - Identificación de productos con mayor variación de precios.
@@ -12,17 +12,17 @@ Este proyecto analiza los precios de productos en un supermercado reconocido de 
 - Visualizaciones interactivas de datos usando Plotly y Streamlit.
 - Predicción básica de precios futuros
 
-* Tecnologías Utilizadas
+## Tecnologías Utilizadas
 Lenguaje: Python 3.12
 Bases de Datos: SQLite
 Bibliotecas: pandas, plotly, streamlit, sqlite3, statsmodels, prophet
 
-* Futuras Mejoras
+## Futuras Mejoras
 - Integrar más fuentes de datos para comparar precios entre supermercados.
 - Mejorar la predicción de precios futuros con Prophet.
 - Añadir reportes anualizados
 
-* Accede a mi trabajo
+## Accede a mi trabajo
 Puedes probar la aplicación accediendo a este enlace:
 https://mi-supermercado.streamlit.app
 Desde allí, podrás explorar gráficos, buscar productos y analizar precios sin necesidad de instalación.
