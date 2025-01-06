@@ -33,7 +33,7 @@ def precio_ofertas():
     fig = px.line(df_producto, x='Fecha', y='Precio', title=f'Variacion de precio de {producto_seleccionado}')
     st.plotly_chart(fig)
     
-    conn = sqlite3.connect(r'C:\Users\MM Asus\Desktop\Proyecto_Mercadona\Mercadona.db')
+    conn = sqlite3.connect('Mercadona.db')
     cursor = conn.cursor()
 
     # Interfaz de Streamlit
