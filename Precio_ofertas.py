@@ -96,7 +96,7 @@ def precio_ofertas():
     from email.message import EmailMessage
     # Usuario y contraseña
     usuario = 'lucasruiz048@gmail.com'
-    password= 'vgfr xagy usdv aagz'
+    password= " "
     server = smtplib.SMTP('smtp.gmail.com', 587)
     server.starttls()
     server.login(usuario, password)
