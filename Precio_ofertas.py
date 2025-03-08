@@ -91,26 +91,29 @@ def precio_ofertas():
     """, (date.today(), date.today()))
     productos_a_notificar = cursor.fetchall()
 
-
+    
     import smtplib
-    from email.message import EmailMessage
-    # Usuario y contraseña
-    usuario = 'lucasruiz048@gmail.com'
-    password= " "
-    server = smtplib.SMTP('smtp.gmail.com', 587)
-    server.starttls()
-    server.login(usuario, password)
+    try:
+        from email.message import EmailMessage
+        # Usuario y contraseña
+        usuario = 'lucasruiz048@gmail.com'
+        password= " "
+        server = smtplib.SMTP('smtp.gmail.com', 587)
+        server.starttls()
+        server.login(usuario, password)
 
-    for producto_id, nombre_producto, precio_actual, email in productos_a_notificar:
-        msg = EmailMessage()
-        msg['From'] = usuario
-        msg['To'] = email
-        msg['Subject'] = "¡Bajada de precio!"
-        cuerpo_del_mail = f"El producto '{nombre_producto}' ahora cuesta {precio_actual}.\n¡Aprovecha la oferta!"
-        msg.set_content(cuerpo_del_mail)
+        for producto_id, nombre_producto, precio_actual, email in productos_a_notificar:
+            msg = EmailMessage()
+            msg['From'] = usuario
+            msg['To'] = email
+            msg['Subject'] = "¡Bajada de precio!"
+            cuerpo_del_mail = f"El producto '{nombre_producto}' ahora cuesta {precio_actual}.\n¡Aprovecha la oferta!"
+            msg.set_content(cuerpo_del_mail)
 
-        server.send_message(msg)
-        print(f"Correo enviado a {email} sobre el producto {nombre_producto}.")
+            server.send_message(msg)
+            print(f"Correo enviado a {email} sobre el producto {nombre_producto}.")
+    except Exception as e:
+        print("Error al enviar el correo:", e)
 
     server.quit();
         
