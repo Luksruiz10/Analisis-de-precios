@@ -34,6 +34,12 @@ Desde allí, podrás explorar gráficos, buscar productos y analizar precios sin
 ## Capturas
 
 ![Captura 1](Capturas/Precios-Ofertas.png)
-![Captura 2](Capturas/Canasta Basica 1.png)
-![Captura 3](Capturas/Canasta Basica 2.png)
+
+---
+
+![Captura 2](Capturas/Canasta_Basica_1.png)
+![Captura 3](Capturas/Canasta_Basica_2.png)
+
+---
+
 ![Captura 4](Capturas/Categorias.png)
