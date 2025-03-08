@@ -27,6 +27,10 @@ Bibliotecas: pandas, plotly, streamlit, sqlite3, statsmodels, prophet
 Puedes probar la aplicación accediendo a este enlace:
 https://analysis-de-precios.streamlit.app/
 
-Red social X con actualizaciones diarias de la canasta basica:
+## Red social X con actualizaciones diarias de la canasta basica:
 https://x.com/MercaDBot
 Desde allí, podrás explorar gráficos, buscar productos y analizar precios sin necesidad de instalación.
+
+## Capturas
+
+anasta Basica 1.png
